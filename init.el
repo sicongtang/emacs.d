@@ -46,7 +46,6 @@
 (require 'init-recentf)
 (require 'init-ido)
 (require 'init-hippie-expand)
-(require 'init-auto-complete)
 (require 'init-windows)
 (require 'init-sessions)
 (require 'init-fonts)
@@ -92,6 +91,24 @@
 
 (require 'init-dash)
 (require 'init-ledger)
+
+;;----------------------------------------------------------------------------
+;; Personal config file
+;;----------------------------------------------------------------------------
+;; use evil mode (vi key binding)
+(require 'init-evil)
+;; use helm mode (Emacs incremental completion and selection narrowing framework)
+(require 'init-helm)
+;; use auto complete
+(require 'init-auto-complete)
+;; use ac-helm (depends on helm 20130328 / auto-complete 1.4.0 / popup 0.5.0)
+(require 'init-ac-helm)
+;; use a template system for Emacs
+(require 'init-yasnippet)
+;; use jump anywhere like easymotion in vim
+(require 'init-ace-jump-mode)
+
+
 ;; Extra packages which don't require any configuration
 
 (require-package 'gnuplot)
@@ -101,6 +118,7 @@
 (when *is-a-mac*
   (require-package 'osx-location))
 (require-package 'regex-tool)
+
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient

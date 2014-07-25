@@ -45,7 +45,8 @@
   (add-hook 'slime-repl-mode-hook 'sanityinc/slime-repl-setup))
 
 (after-load 'auto-complete
-  (add-to-list 'ac-modes 'slime-repl-mode))
+   (add-to-list 'ac-modes 'slime-repl-mode))
+
 
 
 (provide 'init-slime)
