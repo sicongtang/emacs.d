@@ -93,7 +93,7 @@
 (require 'init-ledger)
 
 ;;----------------------------------------------------------------------------
-;; Personal config file
+;; Bobby Tang personal config file
 ;;----------------------------------------------------------------------------
 ;; use evil mode (vi key binding)
 (require 'init-evil)
@@ -107,6 +107,9 @@
 (require 'init-yasnippet)
 ;; use jump anywhere like easymotion in vim
 (require 'init-ace-jump-mode)
+;; use Format HTML, CSS and JavaScript/JSON by js-beautify
+;; https://github.com/yasuyk/web-beautify
+(require 'init-web-beautify)
 
 
 ;; Extra packages which don't require any configuration
