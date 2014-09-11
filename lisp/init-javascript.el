@@ -75,18 +75,18 @@
 (define-key inferior-js-minor-mode-map "\C-c\C-r" 'js-send-region-and-go)
 
 ;; Using nodejs, we need to simply the output
-(setenv "NODE_NO_READLINE" "1")
+;; (setenv "NODE_NO_READLINE" "1")
 
 ;; Replace nonsense message in REPL command prompt
-;;(setq inferior-js-mode-hook
-;;      (lambda ()
-;;        ;; We like nice colors
-;;        (ansi-color-for-comint-mode-on)
-;;        ;; Deal with some prompt nonsense
-;;        (add-to-list
-;;         'comint-preoutput-filter-functions
-;;         (lambda (output)
-;;           (replace-regexp-in-string "\033\\[[0-9]+[A-Z]" "" output)))))
+(setq inferior-js-mode-hook
+      (lambda ()
+        ;; We like nice colors
+        (ansi-color-for-comint-mode-on)
+        ;; Deal with some prompt nonsense
+        (add-to-list
+         'comint-preoutput-filter-functions
+         (lambda (output)
+           (replace-regexp-in-string "\033\\[[0-9]+[A-Z]" "" output)))))
 
 (define-minor-mode inferior-js-keys-mode
   "Bindings for communicating with an inferior js interpreter."
