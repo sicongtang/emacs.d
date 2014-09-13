@@ -24,7 +24,8 @@
 
 ;; js2-mode
 (after-load 'js2-mode
-  (add-hook 'js2-mode-hook '(lambda () (setq mode-name "JS2"))))
+  (add-hook 'js2-mode-hook '(lambda () (setq mode-name "JS2")))
+  (add-hook 'js2-mode-hook 'ac-js2-mode))
 
 (setq-default
  js2-basic-offset preferred-javascript-indent-level
@@ -32,6 +33,11 @@
 
 (after-load 'js2-mode
   (js2-imenu-extras-setup))
+
+;; ac-js2-mode
+(after-load 'ac-js2-mode
+  (setq ac-js2-evaluate-calls t))
+  ;;(setq ac-js2-external-libraries '("full/path/to/a-library.js"))
 
 ;; js-mode
 (setq-default js-indent-level preferred-javascript-indent-level)
