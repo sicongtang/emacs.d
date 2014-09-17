@@ -32,6 +32,10 @@
 (eval-after-load 'sgml-mode
   '(define-key html-mode-map (kbd "C-c f") 'web-beautify-html))
 
+(eval-after-load 'web-mode
+  '(define-key web-mode-map (kbd "C-c f") 'web-beautify-html))
+
+
 (eval-after-load 'css-mode
   '(define-key css-mode-map (kbd "C-c f") 'web-beautify-css))
 

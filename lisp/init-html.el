@@ -6,7 +6,8 @@
   (tagedit-add-paredit-like-keybindings)
   (add-hook 'sgml-mode-hook (lambda () (tagedit-mode 1))))
 
-(add-auto-mode 'html-mode "\\.(jsp|tmpl)\\'")
+;; ~/.tidyrc
+(add-auto-mode 'html-mode "\\.(jsp|tmpl|hbs)\\'")
 
 ;; Note: ERB is configured in init-ruby-mode
 
