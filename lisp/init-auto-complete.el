@@ -4,7 +4,7 @@
 (global-auto-complete-mode t)
 (setq-default ac-expand-on-auto-complete nil)
 (setq-default ac-auto-start t) ; (setq-default ac-auto-start nil)
-(setq-default ac-dwim nil) ; (setq-default ac-dwim t) To get pop-ups with docs even if a word is uniquely completed
+(setq-default ac-dwim t) ; (setq-default ac-dwim t) To get pop-ups with docs even if a word is uniquely completed
 
 
 ;;----------------------------------------------------------------------------

@@ -110,9 +110,12 @@
 ;; use Format HTML, CSS and JavaScript/JSON by js-beautify
 ;; https://github.com/yasuyk/web-beautify
 (require 'init-web-beautify)
-;; web template editing mode for emacs http://web-mode.org
+;; use web template editing mode for emacs http://web-mode.org
 ;; https://github.com/fxbois/web-mode
 ;; (require 'init-web-mode)
+;; use go mode
+(require 'init-go-mode)
+
 
 ;; Extra packages which don't require any configuration
 
