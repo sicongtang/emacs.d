@@ -23,6 +23,11 @@
 ;;; Generated autoloads from go-mode.el
 (require-package 'go-mode)
 
+;;(add-hook 'go-mode-hook
+;;          (lambda ()
+;;            (setq tab-width 8)
+;;            (setq indent-tabs-mode 1)))
+
 (autoload 'go-mode "go-mode" "\
 Major mode for editing Go source text.
 
